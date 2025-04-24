@@ -8,7 +8,7 @@
 - IT professional with real-world project experience in:
   - **IT Networking** using Cisco Packet Tracer
   - **IT Diagramming** using Draw.io
-  - **Database Modeling and Queries** using MySQL Workbench
+  - **Database Management** using MySQL Workbench
   - **Web Development** using VSCode
 
   

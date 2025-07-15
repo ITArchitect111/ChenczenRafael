@@ -459,32 +459,14 @@ body {
   .card-container {
     flex-direction: column;
     align-items: center;
-    margin: 10px;
     padding:30px;
   }
 
   .badge-card {
     width: 100%;
-    margin: 1.5rem 0;
   }
-
-  .slideshow-container {
-    position: relative;
-    margin: 10px;
-    width: 70%;
-    height: 70%;
-    margin: 50px auto;
-  }
-
-  .SlideBackground {
-    border-radius: 10px;
-    overflow: hidden;
-    margin-bottom: 30px;
-    padding: 8px;
-
-  }
-
-  .top-text {
+  
+.top-text {
     color: #030000;
     padding: 16px;
     text-align: center;
@@ -500,6 +482,22 @@ body {
   .top-text p {
     font-size: 12px;
     font-weight: 300;
+  }
+  
+  .slideshow-container {
+    position: relative;
+    margin: 10px;
+    width: 70%;
+    height: 70%;
+    margin: 50px auto;
+  }
+  
+  .SlideBackground {
+    border-radius: 10px;
+    overflow: hidden;
+    margin-bottom: 30px;
+    padding: 8px;
+
   }
 
   .image-wrapper {

@@ -78,6 +78,10 @@ body {
   padding: 2rem;
   flex-wrap: wrap;
   background-color:#000;
+  margin:12px;
+  border-radius:2rem;
+  backdrop-filter:blur(4px);
+  
 }
 
 .description {

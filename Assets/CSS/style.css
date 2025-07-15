@@ -1,10 +1,9 @@
+/* ===== BASE STYLES ===== */
 html {
   box-sizing: border-box;
 }
 
-*,
-*:before,
-*:after {
+*, *:before, *:after {
   box-sizing: inherit;
 }
 
@@ -12,19 +11,20 @@ body {
   margin: 0;
   padding: 0;
   height: 100vh;
-  font-family: 'Courier New', Courier, monospace; /* Terminal-like font */
+  font-family: 'Press Start 2P', cursive; /* Pixel font */
   scroll-behavior: smooth;
-  background: #000; /* Pure black background */
-  color: #0f0; /* Classic green terminal text */
-  line-height: 1.4;
+  background: #000000; /* Pure black */
+  color: #00FF00; /* Classic green terminal text */
+  line-height: 1.5;
 }
 
-/* Terminal-style cursor blink effect */
+/* ===== TERMINAL CURSOR EFFECT ===== */
 @keyframes blink {
   0%, 100% { opacity: 1; }
   50% { opacity: 0; }
 }
 
+/* ===== PARTICLES BACKGROUND ===== */
 #particles-js {
   position: fixed;
   width: 100%;
@@ -34,32 +34,30 @@ body {
   left: 0;
   right: 0;
   bottom: 0;
-  opacity: 0.3; /* Make particles more subtle */
+  opacity: 0.5; /* Slightly transparent */
 }
 
-/* Terminal-style navigation */
+/* ===== NAVIGATION BAR (PIXEL STYLE) ===== */
 .topnav {
   overflow: hidden;
   position: relative;
   padding: 0 20px;
-  background: rgba(0, 20, 0, 0.8); /* Dark green background */
-  border-bottom: 1px solid #0f0; /* Green border */
+  background: rgba(0, 20, 0, 0.8); /* Dark green */
+  border-bottom: 2px solid #00FF00; /* Pixel border */
 }
 
 .topnav a {
-  color: #0f0; /* Green text */
+  color: #00FF00;
   text-decoration: none;
-  font-size: 17px;
+  font-size: 14px; /* Smaller for pixel look */
   padding: 14px 16px;
   display: block;
-  font-weight: bold;
   text-transform: uppercase;
-  letter-spacing: 1px;
 }
 
 .topnav a.active {
-  background: rgba(0, 255, 0, 0.2); /* Slightly brighter green background */
-  text-shadow: 0 0 5px #0f0; /* Glow effect */
+  background: rgba(0, 255, 0, 0.2);
+  text-shadow: 0 0 8px #00FF00; /* Glow effect */
 }
 
 #myLinks {
@@ -73,11 +71,11 @@ body {
   display: none;
   font-size: 24px;
   cursor: pointer;
-  color: #0f0;
+  color: #00FF00;
   padding: 14px 16px;
 }
 
-/* Hero section with terminal look */
+/* ===== HERO SECTION (TERMINAL TEXT) ===== */
 .Hero {
   display: flex;
   align-items: center;
@@ -85,299 +83,379 @@ body {
   gap: 2rem;
   padding: 2rem;
   flex-wrap: wrap;
-  border-bottom: 1px dashed #0f0; /* Dashed green border */
-}
-
-.description {
-  flex: 1;
-  text-align: left;
+  border-bottom: 2px dashed #00FF00; /* Dashed pixel border */
 }
 
 .description h1 {
-  font-size: 30px;
-  font-weight: bold;
-  color: #0f0; /* Green */
-  line-height: 1;
+  font-size: 28px;
+  color: #FFFF00; /* Yellow for headers */
   margin-bottom: 20px;
-  text-shadow: 0 0 5px #0f0;
+  text-shadow: 2px 2px 0 #006600; /* Pixel text shadow */
 }
 
 .description h2 {
-  overflow: hidden;
-  white-space: nowrap;
-  font-size: 25px;
-  font-weight: bold;
-  color: #0af; /* Bright blue for contrast */
-  text-align: left;
-  border-right: 2px solid #0f0; /* Green cursor */
-  width: 0;
-  animation:
+  font-size: 22px;
+  color: #00FFFF; /* Cyan for subheaders */
+  border-right: 4px solid #00FF00; /* Blinking cursor */
+  animation: 
     typing 12s steps(28, end) infinite,
     blink 0.75s step-end infinite;
 }
 
 .description p {
-  font-size: 16px;
-  font-weight: 500;
-  line-height: 1.8;
-  color: #0f0;
+  font-size: 14px; /* Smaller for terminal feel */
+  color: #00FF00;
   margin: 20px 0;
 }
 
 .description a {
   background: #000;
-  border-radius: 0; /* Sharp corners for terminal buttons */
+  color: #00FF00;
   padding: 12px 24px;
-  color: #0f0;
-  font-weight: bold;
-  font-size: 16px;
-  border: 1px solid #0f0;
-  box-shadow: none;
-  transition: all 0.3s ease;
+  border: 2px solid #00FF00; /* Pixel border */
+  font-size: 14px;
   text-decoration: none;
-  display: inline-block;
+  transition: all 0.3s;
 }
 
 .description a:hover {
   background: rgba(0, 255, 0, 0.1);
-  text-shadow: 0 0 5px #0f0;
+  text-shadow: 0 0 8px #00FF00;
 }
 
-.image {
-  flex: 1;
-  text-align: center;
-}
-
-.image img {
-  max-width: 100%;
-  max-height: 100%;
-  margin-top: 30px;
-  border: 1px solid #0f0;
-  box-shadow: 0 0 10px rgba(0, 255, 0, 0.5);
-}
-
-/* Skills section with terminal style */
+/* ===== SKILLS SECTION (PIXEL CARDS) ===== */
 .skills-section {
   padding: 4rem 1rem;
   text-align: center;
-  border-bottom: 1px dashed #0f0;
+  border-bottom: 2px dashed #00FF00;
 }
 
 .section-header h1 {
-  font-size: 2rem;
-  color: #0af; /* Bright blue */
-  margin-bottom: 0.5rem;
-  text-shadow: 0 0 5px #0af;
+  font-size: 26px;
+  color: #00FFFF; /* Cyan */
+  text-shadow: 2px 2px 0 #006600;
 }
 
 .section-header p {
-  font-size: 1rem;
-  color: #0f0;
-  max-width: 600px;
-  margin: 0 auto 2rem;
-  line-height: 1.6;
+  font-size: 12px;
+  color: #00FF00;
 }
 
 .badge-card {
-  background: rgba(0, 10, 0, 0.8); /* Dark green background */
-  border: 1px solid #0f0;
-  color: #0f0;
+  background: rgba(0, 10, 0, 0.8);
+  border: 2px solid #00FF00;
+  color: #00FF00;
   width: 320px;
-  padding: 2rem 1.5rem 1.5rem;
-  border-radius: 0; /* Sharp corners */
-  text-align: center;
-  position: relative;
+  padding: 2rem 1.5rem;
   margin: 2rem;
-  box-shadow: 0 0 10px rgba(0, 255, 0, 0.3);
-  z-index: 1;
-  transition: all 0.3s ease;
-  backdrop-filter: blur(4px);
-}
-
-.badge-card:hover {
-  background: rgba(0, 20, 0, 0.9);
-  box-shadow: 0 0 20px rgba(0, 255, 0, 0.5);
-  transform: translateY(-5px);
+  box-shadow: 4px 4px 0 #003300; /* Pixel shadow */
 }
 
 .badge-card h1 {
-  margin-top: 3rem;
-  font-size: 30px;
-  color: #f0f; /* Magenta for headings */
-  font-weight: bold;
-  text-align: left;
+  font-size: 22px;
+  color: #FF00FF; /* Magenta */
 }
 
 .badge-card h3 {
-  margin-top: 2.50rem;
-  font-size: 25px;
-  color: #ff0; /* Yellow for subheadings */
-  font-weight: bold;
-  text-align: left;
+  font-size: 18px;
+  color: #FFFF00; /* Yellow */
 }
 
 .badge-card ul {
-  margin-top: 1rem;
-  padding-left: 1.2rem;
-  text-align: left;
-  font-size: 16px;
-  line-height: 1.5;
-  color: #0f0;
-  list-style-type: "> "; /* Terminal-style bullet */
+  font-size: 12px;
+  color: #00FF00;
+  list-style-type: "> "; /* Terminal bullet */
 }
 
-/* Projects section */
-.Projects {
-  align-items: center;
-  text-align: center;
-  border-bottom: 1px dashed #0f0;
-  padding-bottom: 2rem;
-}
-
+/* ===== PROJECTS SECTION (PIXEL STYLE) ===== */
 .Projects h1 {
-  font-weight: bold;
-  color: #f0f; /* Magenta */
-  font-size: 30px;
-  text-shadow: 0 0 5px #f0f;
+  font-size: 26px;
+  color: #FFFF00;
+  text-shadow: 2px 2px 0 #006600;
 }
 
 .SlideBackground {
-  background-color: #000;
-  border: 1px solid #0f0;
-  border-radius: 0;
-  overflow: hidden;
-  margin-bottom: 30px;
-  padding: 0;
-}
-
-.top-text {
-  color: #0f0;
-  padding: 20px;
-  text-align: center;
-  border-bottom: 1px dashed #0f0;
+  background: #000;
+  border: 2px solid #00FF00;
 }
 
 .top-text h3 {
-  font-size: 25px;
-  font-weight: bold;
+  font-size: 20px;
+  color: #00FFFF;
 }
 
 .top-text p1 {
-  font-size: 22px;
+  font-size: 14px;
+  color: #00FF00;
 }
 
 .image-wrapper {
-  background-color: #000;
-  padding: 20px;
-  display: flex;
-  margin: 70px;
-  justify-content: center;
-  align-items: center;
-  border: 1px solid #0f0;
-}
-
-.bottom-row {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 10px 20px;
-  border-top: 1px dashed #0f0;
+  background: #000;
+  border: 2px solid #00FF00;
 }
 
 .TechStack img {
-  height: 30px;
-  max-width: 100px;
-  filter: hue-rotate(90deg) brightness(1.5); /* Make tech icons green */
+  filter: brightness(1.5) hue-rotate(90deg); /* Green tint */
 }
 
 .github-link a {
-  color: #0f0;
-  background-color: #000;
-  padding: 8px 16px;
-  border-radius: 0;
-  text-decoration: none;
-  border: 1px solid #0f0;
-  font-weight: bold;
+  background: #000;
+  color: #00FF00;
+  border: 2px solid #00FF00;
+  font-size: 12px;
 }
 
-.github-link a:hover {
-  background-color: rgba(0, 255, 0, 0.1);
-}
-
-/* Navigation arrows */
-.prev,
-.next {
-  cursor: pointer;
-  position: absolute;
-  top: 45%;
-  width: auto;
-  padding: 16px;
-  color: #0f0;
-  font-weight: bold;
-  font-size: 22px;
-  background-color: rgba(0, 20, 0, 0.8);
-  border-radius: 0;
-  transition: background-color 0.3s ease;
-  user-select: none;
-  border: 1px solid #0f0;
-}
-
-/* Footer */
+/* ===== FOOTER (PIXEL STYLE) ===== */
 .Footer {
-  position: relative;
-  width: 100%;
-  min-height: 100px;
-  padding: 20px 50px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  background: rgba(0, 10, 0, 0.8);
-  border-top: 1px solid #0f0;
-}
-
-.social-icon {
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 10px 0;
-  flex-wrap: wrap;
-}
-
-.social-icon__item {
-  list-style: none;
+  background: rgba(0, 20, 0, 0.8);
+  border-top: 2px solid #00FF00;
 }
 
 .social-icon__link {
-  font-size: 25px;
-  color: #0f0;
-  margin: 0 10px;
-  display: inline-block;
-  transition: 0.5s;
-}
-
-.social-icon__link:hover {
-  transform: translateY(-10px);
-  text-shadow: 0 0 10px #0f0;
+  color: #00FF00;
+  font-size: 20px;
 }
 
 .Footer p {
-  color: #0f0;
-  margin: 15px 0 10px 0;
-  font-size: 17px;
-  font-weight: bold;
+  font-size: 12px;
+  color: #00FF00;
 }
 
-/* Responsive styles remain the same */
 @media (max-width: 767px) and (max-height: 1000px) {
-  /* ... (keep all your existing mobile styles, they'll inherit the new colors) */
+  .topnav {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  #myLinks {
+    width: 100%;
+    justify-content: center;
+    flex-wrap: wrap;
+    text-align: center;
+  }
+
+  .topnav a:not(.icon) {
+    width: auto;
+  }
+
+  .topnav .icon {
+    display: block;
+    position: absolute;
+    right: 20px;
+    top: 10px;
+  }
+
+  .topnav .icon.close {
+    display: none;
+
+  }
+
+  .topnav.show #myLinks {
+    display: flex;
+  }
+
+  .topnav.show .icon.open {
+    display: none;
+  }
+
+  .topnav.show .icon.close {
+    display: block;
+  }
+
+  .Hero {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .description,
+  .image {
+    width: 100%;
+  }
+
+  .description h1 {
+    font-size: clamp(24px, 4vw, 36px);
+    white-space: normal;
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+
+  .description h2 {
+    font-size: clamp(20px, 3vw, 25px);
+    white-space: normal;
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+
+  .description p {
+    font-size: clamp(14px, 2vw, 18px);
+    white-space: normal;
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+
+  .description a {
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+
+  .card-container {
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+  }
+
+  .badge-card {
+    width: 90%;
+    margin: 1.5rem 0;
+  }
+
+  .slideshow-container {
+    position: relative;
+    margin: 10px;
+    width: 70%;
+    height: 70%;
+    margin: 50px auto;
+  }
+
+  .SlideBackground {
+
+    border-radius: 10px;
+    overflow: hidden;
+    margin-bottom: 30px;
+    padding: 8px;
+
+  }
+
+  .top-text {
+    color: #030000;
+    padding: 16px;
+    text-align: center;
+  }
+
+  .top-text h3 {
+    font-size: 14px;
+    font-weight: bolder;
+  }
+
+  .top-text p1 {
+    font-size: 12px;
+    font-weight: 300;
+  }
+
+  .image-wrapper {
+    background-color: #3d3a3a;
+    padding: 10px;
+    height: 100px;
+    display: flex;
+    margin: 20px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+  }
+
+  .image-wrapper img {
+    width: 100%;
+    height: 100%;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  }
+
+  .bottom-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+  }
+
+  .TechStack img {
+    height: 20px;
+    max-width: 70px;
+  }
+
+  .github-link a {
+    color: #ffffff;
+    background-color: #b71616;
+    padding: 3px 8px;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+  }
+
+  .github-link a:hover {
+    background-color: #555;
+  }
+
+  .prev,
+  .next {
+    cursor: pointer;
+    position: absolute;
+    top: 60%;
+    width: auto;
+    padding: 8px;
+    color: white;
+    font-weight: bold;
+    font-size: 10px;
+    background-color: rgba(0, 0, 0, 0.4);
+    border-radius: 3px;
+    transition: background-color 0.3s ease;
+    user-select: none;
+  }
+
+  .prev {
+    left: 2px;
+  }
+
+  .next {
+    right: 2px;
+  }
+
+  .Footer {
+    width: 100%;
+    min-height: 88px;
+    padding: 16px 41px;
+    align-items: center;
+    text-align: center;
+  }
+
+  .social-icon {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2px 3px;
+    flex-wrap: wrap;
+  }
+
+  .social-icon__item {
+    list-style: none;
+  }
+
+  .social-icon__link {
+    font-size: 20px;
+    color: #fff;
+    margin: 0 5px;
+    display: inline-block;
+    transition: 0.5s;
+  }
+
+  .social-icon__link:hover {
+    transform: translateY(-10px);
+  }
+
+  .Footer p {
+    color: #fff;
+    margin: 13px 0 8px 0;
+    font-size: 12px;
+    font-weight: 300;
+  }
+
 }
 
 @media (min-width: 768px) {
   #myLinks {
     display: flex !important;
   }
+
   .topnav .icon {
     display: none;
   }

@@ -70,10 +70,9 @@ body {
   cursor: pointer;
   color: #0f0;
   padding: 14px 16px;
-  top: 10px;
+  top: 30px;
 }
 
-/* Hero Section */
 .Hero {
   display: flex;
   align-items: center;
@@ -141,7 +140,6 @@ body {
   box-shadow: 0 0 10px rgba(0, 255, 0, 0.5);
 }
 
-/* Skills Section */
 .skills-section {
   padding: 2rem 1rem;
   text-align: center;
@@ -433,21 +431,21 @@ body {
   }
 
   .description h1 {
-    font-size: clamp(24px, 4vw, 36px);
+    font-size: 16px;
     white-space: normal;
     margin-top: 50px;
     margin-bottom: 50px;
   }
 
   .description h2 {
-    font-size: clamp(18px, 3vw, 25px);
+    font-size: 13px;
     white-space: normal;
     margin-top: 50px;
     margin-bottom: 50px;
   }
 
   .description p {
-    font-size: clamp(14px, 2vw, 18px);
+    font-size: 12px;
     white-space: normal;
     margin-top: 50px;
     margin-bottom: 50px;
@@ -497,7 +495,7 @@ body {
     font-weight: bolder;
   }
 
-  .top-text p1 {
+  .top-text p {
     font-size: 12px;
     font-weight: 300;
   }

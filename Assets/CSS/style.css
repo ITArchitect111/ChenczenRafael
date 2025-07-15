@@ -77,10 +77,7 @@ body {
   gap: 2rem;
   padding: 2rem;
   flex-wrap: wrap;
-  background-color:#000;
-  margin:12px;
-  border-radius:2rem;
-  backdrop-filter:blur(4px);
+  
   
 }
 
@@ -210,6 +207,8 @@ body {
   box-shadow: 0 8px 20px rgba(255, 255, 255, 0.05);
   z-index: 1;
   transition: all 0.3s ease;
+  border-radius:2rem;
+  backdrop-filter:blur(4px);
 }
 
 .badge-card:hover {

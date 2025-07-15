@@ -430,7 +430,7 @@ body {
     display: block;
     position: absolute;
     right: 20px;
-    top: 40px;
+    top: 7px;
   }
 
   .topnav .icon.close {
@@ -468,7 +468,6 @@ body {
 
   .description h2 {
     font-size: 13px;
-    white-space: normal;
     margin-top: 50px;
     margin-bottom: 50px;
   }

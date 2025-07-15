@@ -195,7 +195,7 @@ body {
 }
 
 .badge-card {
-  background: rgba(255, 255, 255, 0.05);
+  background: rgba(0,0,0,0.4);
   border: 1px solid rgba(255, 255, 255, 0.1);
   color: white;
   width: 320px;
@@ -204,11 +204,11 @@ body {
   text-align: center;
   position: relative;
   margin: 2rem;
-  box-shadow: 0 8px 20px rgba(255, 255, 255, 0.05);
+  box-shadow: 0 0px 10px rgba(0, 255, 0, 0.2);
   z-index: 1;
   transition: all 0.3s ease;
   border-radius:2rem;
-  backdrop-filter:blur(4px);
+  backdrop-filter:blur(8px);
 }
 
 .badge-card:hover {
@@ -259,7 +259,7 @@ body {
   text-align: left;
   font-size: 16px;
   line-height: 1.5;
-  color: #ff51bb;
+  color: #00ff00;
   font-style: italic;
 }
 

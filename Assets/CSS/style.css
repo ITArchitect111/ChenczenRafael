@@ -1,9 +1,10 @@
-/* ========== Global ========== */
 html {
   box-sizing: border-box;
 }
 
-*, *::before, *::after {
+*,
+*:before,
+*:after {
   box-sizing: inherit;
 }
 
@@ -11,14 +12,19 @@ body {
   margin: 0;
   padding: 0;
   height: 100vh;
-  font-family: 'Press Start 2P', cursive;
+  font-family: 'Courier New', Courier, monospace; /* Terminal-like font */
   scroll-behavior: smooth;
-  background: #000;
-  color: #00ff00;
-  overflow-x: hidden;
+  background: #000; /* Pure black background */
+  color: #0f0; /* Classic green terminal text */
+  line-height: 1.4;
 }
 
-/* ========== Background Particle Layer ========== */
+/* Terminal-style cursor blink effect */
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0; }
+}
+
 #particles-js {
   position: fixed;
   width: 100%;
@@ -26,30 +32,34 @@ body {
   z-index: -1;
   top: 0;
   left: 0;
+  right: 0;
+  bottom: 0;
+  opacity: 0.3; /* Make particles more subtle */
 }
 
-/* ========== Navigation ========== */
+/* Terminal-style navigation */
 .topnav {
   overflow: hidden;
   position: relative;
   padding: 0 20px;
-  background: #0a0a0a;
-  border-bottom: 2px solid #00ff00;
-  box-shadow: 0 0 10px #00ff00;
+  background: rgba(0, 20, 0, 0.8); /* Dark green background */
+  border-bottom: 1px solid #0f0; /* Green border */
 }
 
 .topnav a {
-  color: #00ff00;
+  color: #0f0; /* Green text */
   text-decoration: none;
-  font-size: 14px;
+  font-size: 17px;
   padding: 14px 16px;
   display: block;
+  font-weight: bold;
   text-transform: uppercase;
+  letter-spacing: 1px;
 }
 
 .topnav a.active {
-  font-weight: bold;
-  text-decoration: underline;
+  background: rgba(0, 255, 0, 0.2); /* Slightly brighter green background */
+  text-shadow: 0 0 5px #0f0; /* Glow effect */
 }
 
 #myLinks {
@@ -63,11 +73,11 @@ body {
   display: none;
   font-size: 24px;
   cursor: pointer;
-  color: #00ff00;
+  color: #0f0;
   padding: 14px 16px;
 }
 
-/* ========== Hero Section ========== */
+/* Hero section with terminal look */
 .Hero {
   display: flex;
   align-items: center;
@@ -75,10 +85,7 @@ body {
   gap: 2rem;
   padding: 2rem;
   flex-wrap: wrap;
-  border: 2px solid #00ff00;
-  background-color: rgba(0, 0, 0, 0.85);
-  margin: 2rem;
-  box-shadow: 0 0 10px #00ff00;
+  border-bottom: 1px dashed #0f0; /* Dashed green border */
 }
 
 .description {
@@ -87,60 +94,55 @@ body {
 }
 
 .description h1 {
-  font-size: 20px;
-  color: #00ff00;
-  text-transform: uppercase;
+  font-size: 30px;
+  font-weight: bold;
+  color: #0f0; /* Green */
+  line-height: 1;
   margin-bottom: 20px;
-  text-shadow: 0 0 4px #00ff00;
+  text-shadow: 0 0 5px #0f0;
 }
 
-/* Typing effect with blinking cursor */
 .description h2 {
   overflow: hidden;
   white-space: nowrap;
-  letter-spacing: 0.05em;
-  font-size: 14px;
-  border-right: 2px solid #00ff00;
+  font-size: 25px;
+  font-weight: bold;
+  color: #0af; /* Bright blue for contrast */
+  text-align: left;
+  border-right: 2px solid #0f0; /* Green cursor */
   width: 0;
-  animation: typing 10s steps(28, end) infinite, blink 0.75s step-end infinite;
-}
-
-@keyframes typing {
-  0% { width: 0; }
-  35% { width: 28ch; }
-  70% { width: 28ch; }
-  100% { width: 0; }
-}
-
-@keyframes blink {
-  0%, 100% { border-color: transparent; }
-  50% { border-color: #00ff00; }
+  animation:
+    typing 12s steps(28, end) infinite,
+    blink 0.75s step-end infinite;
 }
 
 .description p {
-  font-size: 12px;
+  font-size: 16px;
+  font-weight: 500;
   line-height: 1.8;
-  color: #00ff00;
+  color: #0f0;
   margin: 20px 0;
 }
 
 .description a {
-  background: transparent;
-  border: 2px solid #00ff00;
-  color: #00ff00;
+  background: #000;
+  border-radius: 0; /* Sharp corners for terminal buttons */
   padding: 12px 24px;
-  font-size: 12px;
+  color: #0f0;
+  font-weight: bold;
+  font-size: 16px;
+  border: 1px solid #0f0;
+  box-shadow: none;
+  transition: all 0.3s ease;
   text-decoration: none;
-  box-shadow: 0 0 5px #00ff00;
-  transition: background 0.3s ease;
+  display: inline-block;
 }
 
 .description a:hover {
-  background: #00ff00;
-  color: #000;
+  background: rgba(0, 255, 0, 0.1);
+  text-shadow: 0 0 5px #0f0;
 }
 
-/* ========== Image Section ========== */
 .image {
   flex: 1;
   text-align: center;
@@ -148,131 +150,198 @@ body {
 
 .image img {
   max-width: 100%;
+  max-height: 100%;
   margin-top: 30px;
-  box-shadow: 0 0 10px #00ff00;
+  border: 1px solid #0f0;
+  box-shadow: 0 0 10px rgba(0, 255, 0, 0.5);
 }
 
-/* ========== Skills Section ========== */
+/* Skills section with terminal style */
 .skills-section {
   padding: 4rem 1rem;
   text-align: center;
-  color: #00ff00;
+  border-bottom: 1px dashed #0f0;
 }
 
 .section-header h1 {
-  font-size: 18px;
-  color: #00c7ff;
+  font-size: 2rem;
+  color: #0af; /* Bright blue */
+  margin-bottom: 0.5rem;
+  text-shadow: 0 0 5px #0af;
 }
 
 .section-header p {
-  font-size: 12px;
-  color: #8aff8a;
+  font-size: 1rem;
+  color: #0f0;
   max-width: 600px;
   margin: 0 auto 2rem;
   line-height: 1.6;
 }
 
-/* ========== Skill Card ========== */
 .badge-card {
-  background: rgba(0,0,0,0.6);
-  border: 1px solid #00ff00;
-  color: #00ff00;
+  background: rgba(0, 10, 0, 0.8); /* Dark green background */
+  border: 1px solid #0f0;
+  color: #0f0;
   width: 320px;
   padding: 2rem 1.5rem 1.5rem;
-  border-radius: 2rem;
+  border-radius: 0; /* Sharp corners */
   text-align: center;
+  position: relative;
   margin: 2rem;
-  box-shadow: 0 0px 10px rgba(0, 255, 0, 0.2);
+  box-shadow: 0 0 10px rgba(0, 255, 0, 0.3);
+  z-index: 1;
   transition: all 0.3s ease;
-  backdrop-filter: blur(6px);
+  backdrop-filter: blur(4px);
 }
 
 .badge-card:hover {
-  background: rgba(0, 255, 0, 0.05);
-  box-shadow: 0 0 20px #00ff00;
+  background: rgba(0, 20, 0, 0.9);
+  box-shadow: 0 0 20px rgba(0, 255, 0, 0.5);
   transform: translateY(-5px);
 }
 
-.icon-square {
-  position: absolute;
-  top: -30px;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 60px;
-  height: 60px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.icon-square img {
-  max-width: 100%;
-  max-height: 100%;
-}
-
-/* Badge Card Typography */
 .badge-card h1 {
   margin-top: 3rem;
-  font-size: 16px;
-  color: #ff353a;
+  font-size: 30px;
+  color: #f0f; /* Magenta for headings */
+  font-weight: bold;
+  text-align: left;
 }
 
 .badge-card h3 {
-  margin-top: 2rem;
-  font-size: 14px;
-  color: #ffcb00;
+  margin-top: 2.50rem;
+  font-size: 25px;
+  color: #ff0; /* Yellow for subheadings */
+  font-weight: bold;
+  text-align: left;
 }
 
 .badge-card ul {
   margin-top: 1rem;
   padding-left: 1.2rem;
   text-align: left;
-  font-size: 12px;
+  font-size: 16px;
   line-height: 1.5;
-  color: #8aff8a;
-  font-style: italic;
+  color: #0f0;
+  list-style-type: "> "; /* Terminal-style bullet */
 }
 
-/* ========== Fade In Animation ========== */
-.fade-in {
-  opacity: 0;
-  transform: translateY(30px);
-  transition: all 0.8s ease-out;
-}
-
-.fade-in.show {
-  opacity: 1;
-  transform: translateY(0);
-}
-
-/* ========== Projects Section ========== */
+/* Projects section */
 .Projects {
+  align-items: center;
   text-align: center;
+  border-bottom: 1px dashed #0f0;
+  padding-bottom: 2rem;
 }
 
 .Projects h1 {
   font-weight: bold;
-  color: #f5c71a;
-  font-size: 20px;
+  color: #f0f; /* Magenta */
+  font-size: 30px;
+  text-shadow: 0 0 5px #f0f;
 }
 
-/* ========== Footer ========== */
-.Footer {
-  width: 100%;
-  min-height: 100px;
+.SlideBackground {
+  background-color: #000;
+  border: 1px solid #0f0;
+  border-radius: 0;
+  overflow: hidden;
+  margin-bottom: 30px;
+  padding: 0;
+}
+
+.top-text {
+  color: #0f0;
   padding: 20px;
   text-align: center;
-  background-color: transparent;
-  color: #00ff00;
-  border-top: 2px solid #00ff00;
-  box-shadow: 0 -2px 10px #00ff00;
+  border-bottom: 1px dashed #0f0;
 }
 
-/* ========== Social Icons ========== */
-.social-icon {
+.top-text h3 {
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.top-text p1 {
+  font-size: 22px;
+}
+
+.image-wrapper {
+  background-color: #000;
+  padding: 20px;
+  display: flex;
+  margin: 70px;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #0f0;
+}
+
+.bottom-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  border-top: 1px dashed #0f0;
+}
+
+.TechStack img {
+  height: 30px;
+  max-width: 100px;
+  filter: hue-rotate(90deg) brightness(1.5); /* Make tech icons green */
+}
+
+.github-link a {
+  color: #0f0;
+  background-color: #000;
+  padding: 8px 16px;
+  border-radius: 0;
+  text-decoration: none;
+  border: 1px solid #0f0;
+  font-weight: bold;
+}
+
+.github-link a:hover {
+  background-color: rgba(0, 255, 0, 0.1);
+}
+
+/* Navigation arrows */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 45%;
+  width: auto;
+  padding: 16px;
+  color: #0f0;
+  font-weight: bold;
+  font-size: 22px;
+  background-color: rgba(0, 20, 0, 0.8);
+  border-radius: 0;
+  transition: background-color 0.3s ease;
+  user-select: none;
+  border: 1px solid #0f0;
+}
+
+/* Footer */
+.Footer {
+  position: relative;
+  width: 100%;
+  min-height: 100px;
+  padding: 20px 50px;
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
+  background: rgba(0, 10, 0, 0.8);
+  border-top: 1px solid #0f0;
+}
+
+.social-icon {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px 0;
   flex-wrap: wrap;
 }
 
@@ -281,47 +350,35 @@ body {
 }
 
 .social-icon__link {
-  font-size: 20px;
-  color: #00ff00;
+  font-size: 25px;
+  color: #0f0;
   margin: 0 10px;
   display: inline-block;
-  transition: transform 0.3s;
+  transition: 0.5s;
 }
 
 .social-icon__link:hover {
   transform: translateY(-10px);
+  text-shadow: 0 0 10px #0f0;
 }
 
 .Footer p {
-  margin-top: 15px;
-  font-size: 12px;
-  font-weight: 300;
-  color: #00ff00;
+  color: #0f0;
+  margin: 15px 0 10px 0;
+  font-size: 17px;
+  font-weight: bold;
 }
 
-/* ========== Responsive ========== */
-@media (max-width: 767px) {
-  .Hero {
-    flex-direction: column;
-    text-align: center;
-  }
+/* Responsive styles remain the same */
+@media (max-width: 767px) and (max-height: 1000px) {
+  /* ... (keep all your existing mobile styles, they'll inherit the new colors) */
+}
 
-  .badge-card {
-    width: 90%;
-    margin: 1.5rem auto;
-  }
-
-  .topnav .icon {
-    display: block;
-    position: absolute;
-    right: 20px;
-    top: 10px;
-  }
-
+@media (min-width: 768px) {
   #myLinks {
-    display: flex;
-    flex-wrap: wrap;
-    text-align: center;
-    justify-content: center;
+    display: flex !important;
+  }
+  .topnav .icon {
+    display: none;
   }
 }

@@ -460,6 +460,7 @@ body {
     flex-direction: column;
     align-items: center;
     margin: 16px;
+    padding:20px;
   }
 
   .badge-card {
@@ -476,7 +477,6 @@ body {
   }
 
   .SlideBackground {
-
     border-radius: 10px;
     overflow: hidden;
     margin-bottom: 30px;

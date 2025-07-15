@@ -492,7 +492,9 @@ body {
 
   .top-text h3 {
     font-size: 14px;
-    font-weight: bolder;
+    font-weight: bolder:
+    text-align:justify;
+    padding:12px;
   }
 
   .top-text p {

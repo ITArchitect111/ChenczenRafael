@@ -269,8 +269,9 @@ body {
   color: #0af;
 }
 
-.top-text p1 {
+.top-text p {
   font-size: 14px;
+  color: #ff0;
 }
 
 .image-wrapper {
@@ -405,7 +406,6 @@ body {
 
   .topnav .icon.close {
     display: none;
-
   }
 
   .topnav.show #myLinks {
@@ -459,11 +459,13 @@ body {
   .card-container {
     flex-direction: column;
     align-items: center;
+    margin:20px;
     padding:30px;
   }
 
   .badge-card {
     width: 100%;
+    margin: 1.5rem 0;
   }
   
 .badge-card h1 {
@@ -476,7 +478,7 @@ body {
 
 .badge-card ul {
   font-size: 14px;
-    }
+  }
   
   .slideshow-container {
     position: relative;
@@ -504,12 +506,13 @@ body {
     font-weight: bolder:
     text-align:justify;
     padding:12px;
-    color:Yellow;
+    
   }
 
   .top-text p {
     font-size: 12px;
     font-weight: 300;
+    color:Yellow;
   }
   
   .image-wrapper {

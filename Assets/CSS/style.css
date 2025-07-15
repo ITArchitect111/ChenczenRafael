@@ -466,23 +466,17 @@ body {
     width: 100%;
   }
   
-.top-text {
-    color: #030000;
-    padding: 16px;
-    text-align: center;
-  }
+.badge-card h1 {
+  font-size: 22px;
+}
 
-  .top-text h3 {
-    font-size: 14px;
-    font-weight: bolder:
-    text-align:justify;
-    padding:12px;
-  }
+.badge-card h3 {
+  font-size: 18px;
+}
 
-  .top-text p {
-    font-size: 12px;
-    font-weight: 300;
-  }
+.badge-card ul {
+  font-size: 14px;
+    }
   
   .slideshow-container {
     position: relative;
@@ -499,7 +493,25 @@ body {
     padding: 8px;
 
   }
+.top-text {
+    color: #030000;
+    padding: 20px;
+    text-align: center;
+  }
 
+  .top-text h3 {
+    font-size: 16px;
+    font-weight: bolder:
+    text-align:justify;
+    padding:12px;
+    color:Yellow;
+  }
+
+  .top-text p {
+    font-size: 12px;
+    font-weight: 300;
+  }
+  
   .image-wrapper {
     background-color: #3d3a3a;
     padding: 10px;

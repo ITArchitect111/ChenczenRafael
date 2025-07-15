@@ -31,10 +31,11 @@ body {
   z-index: -1;
   top: 0;
   left: 0;
-  opacity: 0.3;
+  right: 0;
+  bottom: 0;
+  
 }
 
-/* Navigation */
 .topnav {
   overflow: hidden;
   padding: 0 20px;
@@ -69,6 +70,7 @@ body {
   cursor: pointer;
   color: #0f0;
   padding: 14px 16px;
+  top: 10px;
 }
 
 /* Hero Section */
@@ -438,7 +440,7 @@ body {
   }
 
   .description h2 {
-    font-size: clamp(20px, 3vw, 25px);
+    font-size: clamp(18px, 3vw, 25px);
     white-space: normal;
     margin-top: 50px;
     margin-bottom: 50px;

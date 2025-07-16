@@ -573,8 +573,8 @@ body {
   .github-link a {
     color: #ffffff;
     background-color: #b71616;
-    padding: 8px;
-    max-width:50px;
+    padding: 4px;
+    max-width:35px;
     border-radius: 8px;
     text-decoration: none;
     transition: background-color 0.3s;

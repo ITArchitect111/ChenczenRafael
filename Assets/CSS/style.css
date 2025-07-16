@@ -510,10 +510,9 @@ body {
   
   .slideshow-container {
     position: relative;
-    margin: 10px;
-    width: 70%;
+    width: 90%;
     height: 70%;
-    margin: 50px auto;
+    margin: 30px auto;
   }
   
   .SlideBackground {

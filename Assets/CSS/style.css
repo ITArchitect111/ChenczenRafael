@@ -195,6 +195,8 @@ body {
   justify-content: center;
   gap: 20px;
   padding: 1rem;
+  margin-top:20px;
+  margin-bottom:20px;
 }
 
 .badge-card {
@@ -489,6 +491,8 @@ body {
     align-items: center;
     padding:30px;
     max-width:100%;
+    margin-top:20px;
+    margin-bottom:20px;
   }
 
   .badge-card {

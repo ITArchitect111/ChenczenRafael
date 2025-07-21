@@ -171,7 +171,7 @@ body {
   box-shadow: 0 0 10px rgba(0, 255, 0, 0.5);
 }
 
-.service 
+.Service 
 {
   padding:30px;
   margin:18px;
@@ -182,24 +182,23 @@ body {
   margin-bottom:20px;
 }
 
-.service h1
+.Service h1
 {
   font-size: 26px;
-  color: #0af;
+  color: #0f0;
 }
 
-.tech
+.Tech
 {
   background: rgba(0, 10, 0, 0.8);
   border: 2px solid #0f0;
-  color: #0f0;
   width: 320px;
   padding: 20px;
   margin: 8px;
   box-shadow: 4px 4px 0 #003300;
 }
 
-.tech h1
+.Tech h1
 {
   font-size: 22px;
   color: #f0f;
@@ -207,10 +206,10 @@ body {
   text-align: left;
 }
 
-.tech ul
+.Tech ul
 {
   font-size: 12px;
-  color: #0f0;
+  color: #0af;
   list-style-type: "> ";
   padding-left: 1.2rem;
 }
@@ -224,14 +223,14 @@ body {
 
 .section-header h1 {
   font-size: 26px;
-  color: #0af;
+  color: #ff0;
   margin-bottom: 0.5rem;
   text-shadow: 2px 2px 0 #006600;
 }
 
 .section-header p {
   font-size: 12px;
-  color: #0f0;
+  color: ;
   max-width: 600px;
   margin: 0 auto 2rem;
 }
@@ -533,7 +532,7 @@ body {
     margin-bottom: 50px;
   }
   
-.service 
+.Service 
 {
   padding:18px;
   margin:10px;
@@ -541,13 +540,12 @@ body {
   margin-bottom:20px;
 }
 
-.service h1
+.Service h1
 {
-  font-size: 20px;
-  color: #0af;
+  font-size: 18px;
 }
 
-.tech
+.Tech
 {
   width: 100px;
   padding: 12px;
@@ -555,12 +553,12 @@ body {
   margin-bottom:20px;
 }
   
-.tech h1
+.Tech h1
 {
   font-size: 18px;
 }
 
-.tech ul
+.Tech ul
 {
   font-size: 8px;
   }

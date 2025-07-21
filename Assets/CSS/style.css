@@ -175,7 +175,9 @@ body {
   margin: 18px;
   margin-bottom: 20px;
   border-bottom: 2px dashed #0f0;
-  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .Service h1 {
@@ -184,7 +186,7 @@ body {
   margin-bottom: 40px;
 }
 
-.ServiceContainer {
+.TechContainer {
   display: flex;
   flex-wrap: nowrap;
   justify-content: center;
@@ -196,8 +198,14 @@ body {
   border: 2px solid #0f0;
   width: 360px;
   padding: 20px;
-  margin: 0;
   box-shadow: 4px 4px 0 #003300;
+}
+
+.Tech h1 {
+  font-size: 22px;
+  color: #f0f;
+  margin-top: 1rem;
+  text-align: left;
 }
 
 .Tech ul {
@@ -206,6 +214,7 @@ body {
   list-style-type: "> ";
   padding-left: 1.2rem;
 }
+
 
 .skills-section {
   padding: 2rem 1rem;
@@ -529,11 +538,11 @@ body {
     gap: 10px;
   }
   
-  .ServiceContainer {
+.TechContainer {
   flex-wrap: wrap;
   justify-content: center;
   gap: 30px;
-  }
+}
 
   .Service h1 {
     font-size: 20px;

@@ -184,6 +184,7 @@ body {
   font-size: 26px;
   color: #0f0;
   margin-bottom:20px;
+  top:4px;
 }
 
 .Tech {
@@ -194,6 +195,7 @@ body {
   margin: 0; 
   box-shadow: 4px 4px 0 #003300;
   margin-top:40px;
+  bottom:4px;
 }
 
 .Tech h1 {

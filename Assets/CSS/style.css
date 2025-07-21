@@ -536,7 +536,6 @@ body {
 {
   padding:18px;
   margin:10px;
-  gap: 13px;
   margin-bottom:20px;
 }
 
@@ -548,9 +547,10 @@ body {
 .Tech
 {
   width: 100px;
-  padding: 12px;
+  padding: 22px;
   margin: 3px;
   margin-bottom:20px;
+  gap: 13px;
 }
   
 .Tech h1

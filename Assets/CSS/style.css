@@ -174,12 +174,11 @@ body {
   padding: 30px;
   margin: 18px;
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   justify-content: center;
-
+  gap: 50px;
   margin-bottom: 20px;
   border-bottom: 2px dashed #0f0;
-    
 }
 
 .Service h1 {
@@ -190,9 +189,9 @@ body {
 .Tech {
   background: rgba(0, 10, 0, 0.8);
   border: 2px solid #0f0;
-  width: 320px;
+  width: 360px; 
   padding: 20px;
-  margin: 18px;
+  margin: 0; 
   box-shadow: 4px 4px 0 #003300;
 }
 

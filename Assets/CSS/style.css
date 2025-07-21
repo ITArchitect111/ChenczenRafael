@@ -177,7 +177,6 @@ body {
   flex-wrap: nowrap;
   justify-content: center;
   gap: 50px;
-  margin-bottom: 20px;
   border-bottom: 2px dashed #0f0;
 }
 
@@ -194,6 +193,7 @@ body {
   padding: 20px;
   margin: 0; 
   box-shadow: 4px 4px 0 #003300;
+  margin-top:40px;
 }
 
 .Tech h1 {

@@ -386,6 +386,7 @@ body {
   border: 2px solid #0f0;
   font-size: 12px;
   text-decoration: none;
+  border-radius: 8px;
 }
 
 .github-link a:hover {
@@ -653,7 +654,6 @@ body {
     
     padding: 4px;
     max-width:8px;
-    border-radius: 8px;
     text-decoration: none;
     transition: background-color 0.3s;
   }

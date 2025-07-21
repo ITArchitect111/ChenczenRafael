@@ -176,7 +176,7 @@ body {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 50px;
+
   margin-bottom: 20px;
   border-bottom: 2px dashed #0f0;
     
@@ -190,7 +190,7 @@ body {
 .Tech {
   background: rgba(0, 10, 0, 0.8);
   border: 2px solid #0f0;
-  width: 400px;
+  width: 320px;
   padding: 20px;
   margin: 18px;
   box-shadow: 4px 4px 0 #003300;

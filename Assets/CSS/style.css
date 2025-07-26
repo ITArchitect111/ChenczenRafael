@@ -197,26 +197,21 @@ body {
 }
 
 .TechContainer {
-   display: flex;
-  flex-wrap: nowrap;
-  justify-content: center;
-  gap: 50px;
-  padding: 120px;
-  width: auto; 
-  margin: 20px;
-   display: grid;
+  display: grid;
   grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  padding: 40px;
+  margin: 20px;
 }
 
 .Tech {
- background: rgba(0, 10, 0, 0.8);
+  background: rgba(0, 10, 0, 0.8);
   border: 2px solid #0f0;
-  width: 200px;
-  padding: 80px;
+  padding: 20px;
   box-shadow: 4px 4px 0 #003300;
   display: flex;
   flex-direction: column;
-  gap: 12px; 
+  gap: 12px;
 }
 
 .Tech h1 {

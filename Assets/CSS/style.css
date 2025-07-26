@@ -207,17 +207,17 @@ body {
   margin-top: 1rem;
   text-align: left;
 }
-.Tech p {
+.Tech h2 {
   font-size: 18px;
   color: #f0f;
   padding-left: 1.2rem;
 }
 
-.Tech ul
+.Tech p
 {
   font-size:15px;
   color:#0f0;
-  list-style-type: "> ";
+  list-style-type: "-";
   padding-left: 1.2rem;
 }
 
@@ -564,11 +564,11 @@ body {
   .Tech h1 {
     font-size: 18px;
   }
-.Tech p
+.Tech h2
 {
   font-size:15px;
 }
-  .Tech ul {
+  .Tech p {
     font-size: 10px;
   }
   

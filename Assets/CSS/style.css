@@ -171,7 +171,7 @@ body {
 }
 
 .Service {
-  padding: 30px;
+  padding: 110px;
   margin: 18px;
   margin-bottom: 20px;
   border-bottom: 2px dashed #0f0;
@@ -192,14 +192,15 @@ body {
   justify-content: center;
   gap: 50px;
   padding:80px;
+  width: 180px;
   margin:20px;
 }
 
 .Tech {
   background: rgba(0, 10, 0, 0.8);
   border: 2px solid #0f0;
-  width: 360px;
-  padding: 70px;
+  width: 30px;
+  padding: 20px;
   box-shadow: 4px 4px 0 #003300;
 }
 

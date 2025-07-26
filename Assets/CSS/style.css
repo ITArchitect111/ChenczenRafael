@@ -171,37 +171,50 @@ body {
 }
 
 .Service {
-  padding: 110px;
+   padding: 110px;
   margin: 18px;
   margin-bottom: 20px;
   border-bottom: 2px dashed #0f0;
   display: flex;
-  flex-direction: row;
-  align-items: center;
+  flex-direction: column; 
+  align-items: flex-start;
 }
 
 .Service h1 {
   font-size: 26px;
-  color: #0f0;
+ color: #0af;
+  margin-bottom: 10px;
+  padding:0;
+  margin:0;
+}
+
+.Service h2 {
+  font-size: 23px;
+ color: #fff;
   margin-bottom: 40px;
+  padding:0;
+  margin:0;
 }
 
 .TechContainer {
-  display: flex;
+   display: flex;
   flex-wrap: nowrap;
   justify-content: center;
   gap: 50px;
-  padding:80px;
-  width: 180px;
-  margin:20px;
+  padding: 80px;
+  width: auto; 
+  margin: 20px;
 }
 
 .Tech {
-  background: rgba(0, 10, 0, 0.8);
+ background: rgba(0, 10, 0, 0.8);
   border: 2px solid #0f0;
-  width: 30px;
+  width: 200px;
   padding: 20px;
   box-shadow: 4px 4px 0 #003300;
+  display: flex;
+  flex-direction: column;
+  gap: 12px; 
 }
 
 .Tech h1 {
@@ -233,14 +246,14 @@ body {
 
 .section-header h1 {
   font-size: 26px;
-  color: #ff0;
+  color: #0af;
   margin-bottom: 0.5rem;
   text-shadow: 2px 2px 0 #006600;
 }
 
 .section-header p {
   font-size: 12px;
-  color: ;
+  color:#fff;
   max-width: 600px;
   margin: 0 auto 2rem;
 }

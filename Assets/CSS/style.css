@@ -202,7 +202,6 @@ body {
   gap: 30px;
   padding: 0;
   margin: 0;
-  
 }
 
 .Tech {
@@ -217,13 +216,13 @@ body {
   min-height: 280px;
 }
 
-
 .Tech h1 {
   font-size: 22px;
  color: #f0f;
   margin-top: 1rem;
   text-align: left;
 }
+
 .Tech h2 {
   font-size: 18px;
   color: #ff0;
@@ -344,10 +343,14 @@ body {
 
 .Projects h1 {
   font-size: 26px;
-  color: #ff0;
-  text-shadow: 2px 2px 0 #006600;
+  color: #0af;
 }
 
+.Projects h2 {
+  ont-size: 23px;
+  color: #fff;
+  text-shadow: 2px 2px 0 #006600;
+}
 .slideshow-container {
   position: relative;
   max-width: 800px;
@@ -368,7 +371,7 @@ body {
 
 .top-text h3 {
   font-size: 20px;
-  color: #0af;
+  color: #f0f;
 }
 
 .top-text p {

@@ -550,7 +550,7 @@ body {
     margin-bottom: 50px;
     margin:0;
     padding:0;
-    white-space: normal;
+    left:1;
   }
 
   .description p {

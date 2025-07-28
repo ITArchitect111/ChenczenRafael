@@ -8,7 +8,15 @@ const responses = {
 
 function toggleChatbot() {
   const popup = document.getElementById("chatbot-popup");
-  popup.style.display = (popup.style.display === "block") ? "none" : "block";
+  const chatIcon = document.getElementById("chat-icon");
+  
+  if (popup.style.display === "block") {
+    popup.style.display = "none";
+    chatIcon.style.display = "block"; 
+  } else {
+    popup.style.display = "block";
+    chatIcon.style.display = "none"; 
+  }
 }
 
 function processInput() {

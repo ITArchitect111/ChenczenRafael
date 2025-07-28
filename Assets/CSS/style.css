@@ -456,9 +456,10 @@ body {
   color: #fff;
   padding: 15px;
   border-radius: 50%;
-  box-shadow: 0 5px 10px rgba(0,0,0,0.3);
   cursor: pointer;
   z-index: 9999;
+  height:28px;
+  width:28px;
   }
 
 .chat-icon img
@@ -466,6 +467,7 @@ body {
   height:25px;
   width:25px;
   max-width:100%;
+  padding:12px;
 }
 
 .chatbot-popup {

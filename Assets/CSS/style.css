@@ -460,6 +460,16 @@ body {
   font-size: 20px;
   box-shadow: 0 4px 8px rgba(0,0,0,0.3);
   z-index: 1000;
+
+  height: 30px;
+    width: 30px;
+    right: 50%;
+    transform: translateX(-50%);
+    top: -20px;
+    border: 8px solid #0fC;
+    border-radius: 85px/ 60px;
+    
+  border-radius: 85px/ 65px;
 }
 
 #chatbot-popup {
@@ -484,15 +494,7 @@ body {
   justify-content: space-between;
   align-items: center;
 
-  height: 30px;
-    width: 30px;
-    right: 50%;
-    transform: translateX(-50%);
-    top: -20px;
-    border: 8px solid $outline-color;
-    border-radius: 85px/ 60px;
-    z-index: 4;
-  border-radius: 85px/ 65px;
+  
 }
 
 #chatbox {

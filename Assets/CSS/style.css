@@ -458,6 +458,7 @@ body {
   border-radius: 50%;
   cursor: pointer;
   z-index: 9999;
+  display:block;
   }
 
 .chat-icon img

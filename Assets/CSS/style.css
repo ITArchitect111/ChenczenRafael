@@ -454,7 +454,6 @@ body {
   right: 20px;
   background: #008040;
   color: #fff;
-  font-size: 22px;
   padding: 15px;
   border-radius: 50%;
   box-shadow: 0 5px 10px rgba(0,0,0,0.3);
@@ -481,10 +480,6 @@ body {
   z-index: 1000;
   border-radius: 10px;
   overflow: hidden;
-}
-
-.chatbot-popup.show {
-  display: block;
 }
 
 .chat-header {

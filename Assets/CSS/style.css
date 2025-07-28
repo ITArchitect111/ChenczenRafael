@@ -468,6 +468,7 @@ body {
   width:15px;
   max-width:100%;
 }
+
 .chatbot-popup {
   display: none;
   position: fixed;
@@ -480,6 +481,10 @@ body {
   z-index: 1000;
   border-radius: 10px;
   overflow: hidden;
+}
+
+.chatbot-popup.show {
+  display: block;
 }
 
 .chat-header {

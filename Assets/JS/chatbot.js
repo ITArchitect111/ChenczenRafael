@@ -15,10 +15,9 @@ function processInput() {
 
   document.getElementById("userInput").value = "";
 
-  // User input
   chatbox.innerHTML += `<div class="user">🧑 You: ${input}</div>`;
 
-  // Bot response
+
   const reply = responses[input] || "Contact the owner for further information.";
   chatbox.innerHTML += `<div class="bot">🤖 Bot: ${reply}</div>`;
 

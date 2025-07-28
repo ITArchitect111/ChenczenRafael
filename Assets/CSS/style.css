@@ -461,6 +461,13 @@ body {
   cursor: pointer;
   z-index: 9999;
   }
+
+.chat-icon img
+{
+  height:15px;
+  width:15px;
+  max-width:100%;
+}
 .chatbot-popup {
   display: none;
   position: fixed;

@@ -483,6 +483,16 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
+
+  height: 30px;
+    width: 30px;
+    right: 50%;
+    transform: translateX(-50%);
+    top: -20px;
+    border: 8px solid $outline-color;
+    border-radius: 85px/ 60px;
+    z-index: 4;
+  border-radius: 85px/ 65px;
 }
 
 #chatbox {

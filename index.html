@@ -438,17 +438,16 @@
 
   </div>
 
-<div id="chat-icon" onclick="toggleChatbot()">
-  </div>
+<div id="chat-icon" class="chat-icon" onclick="toggleChatbot()"><img src="../Assets/Image/Bot.png"></div>
 
 
-<div id="chatbot-popup">
-  <div id="chat-header">
+<div id="chatbot-popup" class="chatbot-popup">
+  <div id="chat-header" class="chat-header'>
     <span>🤖 Ask Me Anything</span>
     <button onclick="toggleChatbot()">✖</button>
   </div>
-  <div id="chatbox"></div>
-  <input type="text" id="userInput" placeholder="Type your question..." />
+  <div id="chatbox" class="chatbox"></div>
+  <input type="text" id="userInput" class="userInput" placeholder="Type your question..." />
   <button onclick="processInput()">Send</button>
 </div>
 

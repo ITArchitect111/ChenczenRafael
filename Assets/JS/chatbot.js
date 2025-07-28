@@ -1,3 +1,7 @@
+window.onload = function () {
+    document.getElementById("chat-icon").addEventListener("click", toggleChatbot);
+  };
+
 const responses = {
   "about me": "I am Chenczen Rafael a BS in Information Systems graduate of Isabela State University Main Campus, i am from Sta. Lucia, Quirino, Isabela and i am aspiring IT proffesional by upskilling.",
   "services": "I offer technical assistance to people who needs ranging from Networking, System Design, Database, Web projecst, and Console progamming.",

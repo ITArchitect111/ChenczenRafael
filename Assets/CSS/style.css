@@ -458,8 +458,6 @@ body {
   border-radius: 50%;
   cursor: pointer;
   z-index: 9999;
-  height:28px;
-  width:28px;
   }
 
 .chat-icon img

@@ -448,7 +448,7 @@ body {
   background: rgba(0, 255, 0, 0.2);
 }
 
-  #chat-icon {
+  .chat-icon {
   position: fixed;
   bottom: 20px;
   right: 20px;
@@ -461,7 +461,7 @@ body {
   cursor: pointer;
   z-index: 9999;
   }
-#chatbot-popup {
+.chatbot-popup {
   display: none;
   position: fixed;
   bottom: 80px;
@@ -475,43 +475,42 @@ body {
   overflow: hidden;
 }
 
-#chat-header {
+.chat-header {
   background: #4caf50;
   color: white;
   padding: 10px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-
-  
 }
 
-#chatbox {
+.chatbox {
   height: 200px;
   overflow-y: auto;
   padding: 10px;
   font-size: 14px;
-  background: #f7f7f7;
+  background: #000000;
 }
 
-#chatbox .user {
+.chatbox .user {
   color: blue;
   margin: 5px 0;
 }
 
-#chatbox .bot {
+.chatbox .bot {
   color: green;
   margin: 5px 0;
 }
 
-#chatbot-popup input[type="text"] {
+.chatbot-popup input[type="text"] {
   width: 70%;
   padding: 8px;
   margin: 5px;
   border: 1px solid #ccc;
+  background-color:#fff;
 }
 
-#chatbot-popup button {
+.chatbot-popup button {
   padding: 8px 10px;
   margin: 5px;
 }

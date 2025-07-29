@@ -509,11 +509,12 @@ body {
 }
 
 .chatbot-popup input[type="text"] {
-  width: 70%;
+  width: 30%;
   padding: 8px;
   margin: 5px;
   border: 1px solid #ccc;
   background-color:#fff;
+  border-radius:30px;
 }
 
 .chatbot-popup button {

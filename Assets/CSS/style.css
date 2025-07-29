@@ -520,8 +520,22 @@ body {
 .chatbot-popup button {
   padding: 8px 10px;
   margin: 5px;
-  background-color:Yellow;
   gap:3px;
+  
+}
+
+.Send i
+{
+  background-color: Blue;
+  font-size:8px;
+  right:0px;
+}
+
+.Clear i
+{
+  background-color:Red;
+  font-size:8px;
+  right:7px;
 }
 
 

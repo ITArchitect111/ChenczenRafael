@@ -462,8 +462,8 @@ body {
 
 .chat-icon img
 {
-  height:25px;
-  width:25px;
+  height:40px;
+  width:40px;
   max-width:100%;
 }
 
@@ -517,7 +517,7 @@ body {
 }
 
 .chatbot-popup button {
-  
+  padding: 8px 10px;
   margin: 5px;
   gap:3px;
   background-color:rgba(red, green, blue, alpha);
@@ -526,7 +526,7 @@ body {
 .Send i
 {
   color: Blue;
-  font-size:14px;
+  font-size:17px;
   right:0px;
 
 }
@@ -534,7 +534,7 @@ body {
 .Clear i
 {
   color:Red;
-  font-size:14px;
+  font-size:17px;
   right:7px;
 }
 

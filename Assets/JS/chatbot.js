@@ -33,3 +33,8 @@ function processInput() {
 
   chatbox.scrollTop = chatbox.scrollHeight;
 }
+
+function Clear()
+{
+  document.getElementById('Clear').textContent = ''; 
+}

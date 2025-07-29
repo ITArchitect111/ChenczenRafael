@@ -520,6 +520,8 @@ body {
 .chatbot-popup button {
   padding: 8px 10px;
   margin: 5px;
+  background-color:Yellow;
+  gap:3px;
 }
 
 

@@ -462,9 +462,10 @@ body {
 
 .chat-icon img
 {
-  height:40px;
-  width:40px;
+  height:70px;
+  width:70px;
   max-width:100%;
+  right:0px;
 }
 
 .chatbot-popup {
@@ -472,7 +473,8 @@ body {
   position: fixed;
   bottom: 80px;
   right: 20px;
-  width: 300px;
+  width: 400px;
+  height: 400px;
   background: white;
   border: 1px solid #ccc;
   box-shadow: 0 4px 12px rgba(0,0,0,0.3);

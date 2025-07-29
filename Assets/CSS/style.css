@@ -521,20 +521,21 @@ body {
   padding: 8px 10px;
   margin: 5px;
   gap:3px;
-  
+  background-color:rgba(red, green, blue, alpha);
 }
 
 .Send i
 {
   background-color: Blue;
-  font-size:8px;
+  font-size:14px;
   right:0px;
+
 }
 
 .Clear i
 {
   background-color:Red;
-  font-size:8px;
+  font-size:14px;
   right:7px;
 }
 

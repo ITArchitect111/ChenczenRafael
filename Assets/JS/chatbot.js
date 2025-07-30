@@ -1,8 +1,11 @@
 
 
 const responses = {
-  "about me": "I am Chenczen Rafael a BS in Information Systems graduate of Isabela State University Main Campus, i am from Sta. Lucia, Quirino, Isabela and i am aspiring IT proffesional by upskilling.",
-  "services": "I offer technical assistance to people who needs ranging from Networking, System Design, Database, Web projecst, and Console progamming.",
+  "help": "help, ?, about, service, skills, projects",
+  "?": "help, ?, about, service, skills, projects",
+  "about": "I am Chenczen Rafael a BS in Information Systems graduate of Isabela State University Main Campus, i am from Sta. Lucia, Quirino, Isabela and i am aspiring IT proffesional by upskilling in IT Networking, Database, System Design, and Web Development.",
+  "service": "I offer technical assistance to clients who needs helps from IT Networks, System Design, Database, Web projecst, and Console progamming activities and assignments.",
+  "skills": "Designing, Web Development, and Console Programming",
   "projects": "You can view my projects on my GitHub: github.com/ITArchitect111"
 };
 

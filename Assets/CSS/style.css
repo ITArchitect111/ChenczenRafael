@@ -178,7 +178,8 @@ body {
   border-bottom: 2px dashed #0f0;
   display: flex;
   flex-direction: column; 
-  align-items: flex-start;
+ 
+  text-align:center;
 }
 
 .Service h1 {
@@ -187,6 +188,7 @@ body {
   margin-bottom: 10px;
   padding:0;
   margin:0;
+   text-align:center;
 }
 
 .Service h2 {
@@ -540,7 +542,76 @@ body {
   font-size:17px;
   right:7px;
 }
+ .FromContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 60px 20px;
+    margin: 0 auto;
+    min-height: 80vh;
+    background: radial-gradient(circle at center, rgba(0,255,0,0.1), rgba(0,0,0,1));
+  }
 
+   .FromContainer form {
+    background: rgba(0, 255, 0, 0.05);
+    padding: 40px;
+    border-radius: 15px;
+    border: 1px solid #0f0;
+    text-align: center;
+    width: 100%;
+    max-width: 400px;
+    box-shadow: 0 0 20px rgba(0,255,0,0.1);
+  }
+
+   .FromContainer h2 {
+    color: #0f0;
+    font-family: monospace;
+    margin-bottom: 20px;
+  }
+
+  .form-group {
+    margin-bottom: 15px;
+  }
+
+ .form-group input, textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #0f0;
+    border-radius: 8px;
+    background: #000;
+    color: #0f0;
+    font-family: monospace;
+    font-size: 14px;
+    transition: 0.3s ease;
+  }
+
+.form-group  input:focus, textarea:focus {
+    outline: none;
+    box-shadow: 0 0 8px #0f0;
+  }
+
+ .form-group button {
+    background: #0f0;
+    color: #000;
+    border: none;
+    padding: 12px 30px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    font-family: monospace;
+    transition: 0.3s;
+  }
+
+ .form-group button:hover {
+    background: #fff;
+    color: #000;
+  }
+
+  #status {
+    margin-top: 15px;
+    font-family: monospace;
+    color: #0f0;
+  }
 
 .Footer {
   padding: 20px 50px;
@@ -550,30 +621,37 @@ body {
 }
 
 .social-icon {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 10px 0;
-  flex-wrap: wrap;
-}
+      list-style: none;
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      padding: 0;
+      margin: 0;
+    }
 
-.social-icon__item {
-  list-style: none;
-}
+    .social-icon__item {
+      display: inline-block;
+    }
 
-.social-icon__link {
-  font-size: 20px;
-  color: #fff;
-  margin: 0 10px;
-  display: inline-block;
-  transition: 0.3s;
-}
+    .social-icon__link {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 50px;
+      height: 50px;
+      background-color: rgba(255, 255, 255, 0.1);
+      border-radius: 50%;
+      color: #0f0;
+      font-size: 24px;
+      text-decoration: none;
+      transition: 0.3s;
+    }
 
-.social-icon__link:hover {
-  transform: translateY(-5px);
-  text-shadow: 0 0 8px #0f0;
-}
-
+    .social-icon__link:hover {
+      background-color: #0f0;
+      color: #000;
+      transform: scale(1.1);
+    }
 .Footer p {
   color: #fff;
   margin: 15px 0 10px;
@@ -819,7 +897,19 @@ body {
   .next {
     right: 2px;
   }
-
+.FromContainer {
+      padding: 30px 10px;
+    }
+    .FromContainer form {
+      width: 90%;
+      padding: px;
+    }
+   .form-group input, textarea {
+      font-size: 13px;
+    }
+   .form-group button {
+      width: 100%;
+    }
   .Footer {
     width: 100%;
     min-height: 88px;
@@ -829,23 +919,13 @@ body {
   }
 
   .social-icon {
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 2px 3px;
+    margin: 1px 2px;
     flex-wrap: wrap;
   }
 
-  .social-icon__item {
-    list-style: none;
-  }
-
   .social-icon__link {
-    font-size: 20px;
-    margin: 0 5px;
-    display: inline-block;
-    transition: 0.5s;
+    font-size: 15px;
+    margin: 0 3px;
   }
 
   .social-icon__link:hover {

@@ -14,6 +14,14 @@
   
 ---
 
+### Moto
+- I dream to become an IT not to flex a degree but learn how to hack system bank account from different countries to earn huge amount of money.
+
+### Work
+
+**Network Configuration Technician**
+-Providing manual configuration and handling manual, site-specific configurations, that demand precision: renaming projects, applying ACL deny rules, configuring IPv6 DHCP for scaling, cleaning up Wi-Fi to keep only the DICT SSID, updating routers to the latest firmware, and setting up website-blocking policies.
+
 ### Tech Stack
 
 #### **Languages & Tools**

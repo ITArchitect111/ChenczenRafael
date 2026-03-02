@@ -1,5 +1,5 @@
 <h1 align="center">Hi there! I'm Chenczen C. Rafael</h1>
-<p align="center">🎓 BS in Information Systems 2019-2023 | 💻 IT Service Provider | 🌐 IT Networking • IT Diagramming • Databases Management • Web Development</p>
+<p align="center">🎓 Network Configuration Technician from Data Lake INC</p>
 
 ---
 

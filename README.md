@@ -1,5 +1,5 @@
 <h1 align="center">Hi there! I'm Chenczen C. Rafael</h1>
-<p align="center">🎓 Network Configuration Technician from Data Lake INC</p>
+<p align="center">🎓 IT Technician from Gruntech Solutions INC.</p>
 
 ---
 
@@ -18,7 +18,19 @@
 - I dream to become an IT not to flex a degree but learn how to hack system bank account from different countries to earn huge amount of money.
 
 ### Work
-
+**IT Technician**
+•Install, configure, maintain, and troubleshoot IP CCTV cameras, Network Video Recorders (NVRs), PoE switches, routers, and wireless access points.
+Configure CCTV cameras and NVRs, including IP addressing, recording parameters, motion detection, image quality, storage, user access, and system integration.
+•Configure P2P connectivity for authorized remote CCTV monitoring and access through supported surveillance applications.
+•Configure FTP services for CCTV snapshot/image transmission and retrieval, enabling efficient storage and transfer of surveillance images across the network.
+• Set up and configure routers and wireless access points, including LAN/WAN parameters, DHCP, IP addressing, wireless configuration, and network connectivity.
+•Troubleshoot CCTV and network issues involving PoE power delivery, Ethernet cabling, IP connectivity, camera-to-NVR communication, and remote access.
+•Perform preventive maintenance, firmware updates, system diagnostics, and operational testing of CCTV and network equipment.
+•Configure and troubleshoot remote CCTV monitoring applications and authorized client devices.
+•Perform network diagnostics using IP scanning, connectivity testing, and packet analysis tools to identify communication and performance issues.
+•Maintain documentation of CCTV device inventories, IP address assignments, network configurations, NVR settings, and installation records.
+•Implement CCTV and network configurations in accordance with organizational security, access-control, and data-privacy requirements.
+<br>
 **Network Configuration Technician**
 -Providing manual configuration and handling manual, site-specific configurations, that demand precision: renaming projects, applying ACL deny rules, configuring IPv6 DHCP for scaling, cleaning up Wi-Fi to keep only the DICT SSID, updating routers to the latest firmware, and setting up website-blocking policies.
 
